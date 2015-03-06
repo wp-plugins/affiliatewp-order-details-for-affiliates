@@ -2,8 +2,8 @@
 Contributors: sumobi, mordauk
 Tags: AffiliateWP, affiliate, Pippin Williamson, Andrew Munro, mordauk, pippinsplugins, sumobi, ecommerce, e-commerce, e commerce, selling, membership, referrals, marketing
 Requires at least: 3.3
-Tested up to: 4.0
-Stable tag: 1.0
+Tested up to: 4.1.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,8 +32,8 @@ The following details can be shown an affiliate who has access:
 1. Customer Name
 1. Customer Email
 1. Customer Phone (only available in WooCommerce)
-1. Customer Shipping Address (only available in WooCommerce)
-1. Customer Billing Address (only available in WooCommerce)
+1. Customer Shipping Address
+1. Customer Billing Address
 
 These can also be easily turned off via a simple filter (see FAQ tab). In addition to disabling the information that is shown, you can customize the layout by editing the `dashboard-tab-order-details.php` template file from your child theme.
 
@@ -63,13 +63,17 @@ Note: When there is global access, the checkbox on the edit affiliate screen is 
 
 = How can I disable certain information that is shown on the affiliate dashboard and email? =
 
-See this code snippet: https://gist.github.com/sumobi/5b04d903dcc2eb0dbe0f
+See this tutorial: http://docs.affiliatewp.com/category/680-order-details-for-affiliates
 
 == Screenshots ==
 
 == Upgrade Notice ==
 
 == Changelog ==
+
+= 1.0.1 =
+* New: EDD integration now supports Shipping Address provided by EDD's [Simple Shipping](https://easydigitaldownloads.com/extensions/simple-shipping/ "Simple Shipping")
+* New: EDD integration now supports Billing Address provided by payment gateways
 
 = 1.0 =
 * Initial release
