@@ -90,12 +90,11 @@
 							<p><strong><?php _e( 'Phone:', 'affiliatewp-order-details-for-affiliates' ); ?></strong><br /><?php echo $customer_phone; ?></p>
 						<?php endif; ?>
 						
-
-						<?php if ( $is_allowed['customer_shipping_address'] && isset( $customer_shipping_address ) ) : ?>
+						<?php if ( $is_allowed['customer_shipping_address'] && ! empty( $customer_shipping_address ) ) : ?>
 							<p><strong><?php _e( 'Shipping Address:', 'affiliatewp-order-details-for-affiliates' ); ?></strong><br/> <?php echo $customer_shipping_address; ?></p>
 						<?php endif; ?>
 
-						<?php if ( $is_allowed['customer_billing_address'] && isset( $customer_billing_address ) ) : ?>
+						<?php if ( $is_allowed['customer_billing_address'] && ! empty( $customer_billing_address ) ) : ?>
 							<p><strong><?php _e( 'Billing Address:', 'affiliatewp-order-details-for-affiliates' ); ?></strong><br/> <?php echo $customer_billing_address; ?></p>
 						<?php endif; ?>
 
